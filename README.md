@@ -1,7 +1,7 @@
 
 # 📊 Analysis Reproduction: Srinivasan, Koyanagi et al., 2025
 
-This repository provides the datasets and code required to reproduce the quantitative analyses and figures from the study by **Srinivasan, Koyanagi et al., 2025**.
+This repository provides the datasets and custom code used to perform the key quantitative analyses from **Srinivasan, Koyanagi et al., 2025**, including mixed-effects modeling, population vector similarity analyses, and regression with covariates.
 
 ---
 
