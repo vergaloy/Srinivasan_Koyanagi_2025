@@ -118,3 +118,5 @@ If you use this code or dataset, please cite:
 **Srinivasan, Koyanagi et al., 2025**  
 *Transient reactivation of small ensembles of adult-born neurons during REM sleep supports memory consolidation in mice*  
 **Nature Communications**, Volume(Issue), Pages. DOI
+
+**For question about the code**, contact Pablo Vergara (pablo.vergara.g@ug.uchile.cl) or open an issue in this github repo.
