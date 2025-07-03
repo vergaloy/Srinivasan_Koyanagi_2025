@@ -1,0 +1,156 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ssd1306.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fonts.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_a8a3b0ad512a6e6c6157440b68d395eac}\label{main_8c_a8a3b0ad512a6e6c6157440b68d395eac}} 
+void {\bfseries HAL\+\_\+\+TIM\+\_\+\+Period\+Elapsed\+Callback} (TIM\+\_\+\+Handle\+Type\+Def $\ast$htim)
+\item 
+\mbox{\Hypertarget{main_8c_a2503c2dfbb7badac8a1eeda8e0ac0c78}\label{main_8c_a2503c2dfbb7badac8a1eeda8e0ac0c78}} 
+void {\bfseries Set\+Up\+Normalize\+Parameter} (float Normalize\+Parameter\mbox{[}2\mbox{]})
+\item 
+\mbox{\Hypertarget{main_8c_ae42aaa62332cc9ced6e0d29417b3295a}\label{main_8c_ae42aaa62332cc9ced6e0d29417b3295a}} 
+void {\bfseries Draw\+Parameter} (int count)
+\item 
+\mbox{\Hypertarget{main_8c_aa886a0f4e7fc33a5d3a5e2354ea0912a}\label{main_8c_aa886a0f4e7fc33a5d3a5e2354ea0912a}} 
+void {\bfseries User\+Set\+Up} (void)
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a22b804736f5648d52f639b2647d4ed13}\label{main_8c_a22b804736f5648d52f639b2647d4ed13}} 
+ADC\+\_\+\+Handle\+Type\+Def {\bfseries hadc1}
+\item 
+DMA\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{main_8c_a1c126854bb1813d31ab4776b21dcc51f}{hdma\+\_\+adc1}}
+\item 
+\mbox{\Hypertarget{main_8c_af7b2c26e44dadaaa798a5c3d82914ba7}\label{main_8c_af7b2c26e44dadaaa798a5c3d82914ba7}} 
+I2\+C\+\_\+\+Handle\+Type\+Def {\bfseries hi2c1}
+\item 
+\mbox{\Hypertarget{main_8c_a2c80fd5510e2990a59a5c90d745c716c}\label{main_8c_a2c80fd5510e2990a59a5c90d745c716c}} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim2}
+\item 
+\mbox{\Hypertarget{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}\label{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}} 
+UART\+\_\+\+Handle\+Type\+Def {\bfseries huart2}
+\item 
+\mbox{\Hypertarget{main_8c_a5633a85dd27f477e7412e7432872f62a}\label{main_8c_a5633a85dd27f477e7412e7432872f62a}} 
+uint16\+\_\+t {\bfseries adc\+Value} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_a929e03c012325589e3d56d31f3f9fff5}\label{main_8c_a929e03c012325589e3d56d31f3f9fff5}} 
+long {\bfseries tim2\+\_\+count} =0
+\item 
+\mbox{\Hypertarget{main_8c_a25871c506e8c0341d47f754407023db0}\label{main_8c_a25871c506e8c0341d47f754407023db0}} 
+float {\bfseries Normalize\+Parameter} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_a376acef8954eadc70f4b55e8e0588e13}\label{main_8c_a376acef8954eadc70f4b55e8e0588e13}} 
+float {\bfseries threshold} = 70
+\item 
+\mbox{\Hypertarget{main_8c_a66625d8d6c0894b4828b43f826a09b8f}\label{main_8c_a66625d8d6c0894b4828b43f826a09b8f}} 
+float {\bfseries duration} = 10
+\item 
+\mbox{\Hypertarget{main_8c_a275dd6dafe5d4455e599ffd15feb06f8}\label{main_8c_a275dd6dafe5d4455e599ffd15feb06f8}} 
+float {\bfseries phase} = 0
+\item 
+\mbox{\Hypertarget{main_8c_a185178c43d48857222d028d3a574cc2c}\label{main_8c_a185178c43d48857222d028d3a574cc2c}} 
+float {\bfseries phase\+\_\+ms} = 0
+\item 
+\mbox{\Hypertarget{main_8c_a2a95a9551e6e37b52f933be8fcd7a0d2}\label{main_8c_a2a95a9551e6e37b52f933be8fcd7a0d2}} 
+float {\bfseries inactive\+\_\+time} = 0
+\item 
+\mbox{\Hypertarget{main_8c_aa58665156a47fae02e9ab6a0f48beba6}\label{main_8c_aa58665156a47fae02e9ab6a0f48beba6}} 
+float {\bfseries mode} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2019 STMicroelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under BSD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+BSD-\/3-\/\+Clause 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\label{main_8c_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.c@{main.c}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920}} 
+\index{main.c@{main.c}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Configure the main internal regulator output voltage
+
+Initializes the CPU, AHB and APB busses clocks
+
+Initializes the CPU, AHB and APB busses clocks
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_a1c126854bb1813d31ab4776b21dcc51f}\label{main_8c_a1c126854bb1813d31ab4776b21dcc51f}} 
+\index{main.c@{main.c}!hdma\_adc1@{hdma\_adc1}}
+\index{hdma\_adc1@{hdma\_adc1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{hdma\_adc1}{hdma\_adc1}}
+{\footnotesize\ttfamily DMA\+\_\+\+Handle\+Type\+Def hdma\+\_\+adc1}
+
+File Name \+: stm32f4xx\+\_\+hal\+\_\+msp.\+c Description \+: This file provides code for the MSP Initialization and de-\/\+Initialization codes.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2019 STMicroelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under BSD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+BSD-\/3-\/\+Clause 

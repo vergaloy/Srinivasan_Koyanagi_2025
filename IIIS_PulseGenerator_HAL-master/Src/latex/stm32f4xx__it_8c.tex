@@ -1,0 +1,80 @@
+\hypertarget{stm32f4xx__it_8c}{}\doxysection{stm32f4xx\+\_\+it.\+c File Reference}
+\label{stm32f4xx__it_8c}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+
+
+Interrupt Service Routines.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+it.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a6ad7a5e3ee69cb6db6a6b9111ba898bc}\label{stm32f4xx__it_8c_a6ad7a5e3ee69cb6db6a6b9111ba898bc}} 
+void {\bfseries NMI\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Non maskable interrupt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a2bffc10d5bd4106753b7c30e86903bea}\label{stm32f4xx__it_8c_a2bffc10d5bd4106753b7c30e86903bea}} 
+void {\bfseries Hard\+Fault\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard fault interrupt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a3150f74512510287a942624aa9b44cc5}\label{stm32f4xx__it_8c_a3150f74512510287a942624aa9b44cc5}} 
+void {\bfseries Mem\+Manage\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Memory management fault. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a850cefb17a977292ae5eb4cafa9976c3}\label{stm32f4xx__it_8c_a850cefb17a977292ae5eb4cafa9976c3}} 
+void {\bfseries Bus\+Fault\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pre-\/fetch fault, memory access fault. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a1d98923de2ed6b7309b66f9ba2971647}\label{stm32f4xx__it_8c_a1d98923de2ed6b7309b66f9ba2971647}} 
+void {\bfseries Usage\+Fault\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Undefined instruction or illegal state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a3e5ddb3df0d62f2dc357e64a3f04a6ce}\label{stm32f4xx__it_8c_a3e5ddb3df0d62f2dc357e64a3f04a6ce}} 
+void {\bfseries SVC\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles System service call via SWI instruction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_adbdfb05858cc36fc520974df37ec3cb0}\label{stm32f4xx__it_8c_adbdfb05858cc36fc520974df37ec3cb0}} 
+void {\bfseries Debug\+Mon\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Debug monitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a6303e1f258cbdc1f970ce579cc015623}\label{stm32f4xx__it_8c_a6303e1f258cbdc1f970ce579cc015623}} 
+void {\bfseries Pend\+SV\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pendable request for system service. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_ab5e09814056d617c521549e542639b7e}\label{stm32f4xx__it_8c_ab5e09814056d617c521549e542639b7e}} 
+void {\bfseries Sys\+Tick\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles System tick timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a38ad4725462bdc5e86c4ead4f04b9fc2}\label{stm32f4xx__it_8c_a38ad4725462bdc5e86c4ead4f04b9fc2}} 
+void {\bfseries TIM2\+\_\+\+IRQHandler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM2 global interrupt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_aaf6ce196dde98712e1223b99766e06c0}\label{stm32f4xx__it_8c_aaf6ce196dde98712e1223b99766e06c0}} 
+void {\bfseries DMA2\+\_\+\+Stream0\+\_\+\+IRQHandler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles DMA2 stream0 global interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+DMA\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{stm32f4xx__it_8c_a1c126854bb1813d31ab4776b21dcc51f}{hdma\+\_\+adc1}}
+\item 
+\mbox{\Hypertarget{stm32f4xx__it_8c_a2c80fd5510e2990a59a5c90d745c716c}\label{stm32f4xx__it_8c_a2c80fd5510e2990a59a5c90d745c716c}} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim2}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interrupt Service Routines. 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2019 STMicroelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under BSD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+BSD-\/3-\/\+Clause 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{stm32f4xx__it_8c_a1c126854bb1813d31ab4776b21dcc51f}\label{stm32f4xx__it_8c_a1c126854bb1813d31ab4776b21dcc51f}} 
+\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!hdma\_adc1@{hdma\_adc1}}
+\index{hdma\_adc1@{hdma\_adc1}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{hdma\_adc1}{hdma\_adc1}}
+{\footnotesize\ttfamily DMA\+\_\+\+Handle\+Type\+Def hdma\+\_\+adc1\hspace{0.3cm}{\ttfamily [extern]}}
+
+File Name \+: stm32f4xx\+\_\+hal\+\_\+msp.\+c Description \+: This file provides code for the MSP Initialization and de-\/\+Initialization codes.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2019 STMicroelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under BSD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+BSD-\/3-\/\+Clause 
