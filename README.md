@@ -111,6 +111,30 @@ Main script to reproduce:
 
 ---
 
+## REM Signal-Triggered Pulse Code (STM32)
+
+This repository includes STM32 C code to deliver real-time pulses triggered by REM signals and phase-specific neural events.
+
+### • Functionality
+- Monitors analog signals (ADC + DMA).
+- Detects peaks or troughs (user-defined threshold and mode).
+- Outputs GPIO pulses with configurable phase delay and duration.
+- OLED interface (SSD1306) for live parameter setup (threshold, phase, duration, inactive time).
+
+### • Hardware
+- STM32 MCU (tested on STM32F4).
+- SSD1306 OLED display (I2C).
+- GPIO inputs for REM signal and buttons.
+- GPIO output for pulse.
+
+### • Files
+- `main.c`: Core logic (signal detection, pulse control, OLED setup).
+- `ssd1306.c/h`: OLED drivers.
+
+📄 Configurable via STM32CubeIDE. See code comments for pin assignments.
+
+---
+
 ## 📄 Citation
 
 If you use this code or dataset, please cite:
